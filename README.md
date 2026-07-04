@@ -1,3 +1,6 @@
+VERSION 1: Features the simple game mechanics but no players or modes
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
