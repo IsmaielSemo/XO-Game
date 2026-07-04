@@ -36,3 +36,723 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-color: #282c34;
+}
+
+.title{
+  color: aqua;
+  font-weight: bold;
+  position: absolute;  /* Takes it out of the layout flow */
+  top: 50px;           
+  left: 50%;           
+  transform: translateX(-50%); /* shifts line up towards the center (to change just update top/left values*/
+  margin: 0;
+}
+
+.title2{
+  color: aqua;
+  font-weight: bold;
+  position: absolute;  /* Takes it out of the layout flow */
+  top: 150px;           
+  left: 50%;           
+  transform: translateX(-50%); /* shifts line up towards the center (to change just update top/left values*/
+  margin: 0;
+}
+
+.choice1{
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ color: aqua;
+ font-weight: bold;
+ top: 100px;              
+ left: 50%;               
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 51px 91px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+.choice2{
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ color: aqua;
+ font-weight: bold;
+ top: 100px;              
+ left: 50%;               
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 51px 91px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+.horizontal_line1{
+  width: 50%;
+  height: 350px;
+  margin: 0px auto;
+  border-bottom: 5px solid wheat;
+}
+
+.horizontal_line2{
+  width: 50%;
+  height: 0px;
+  margin: 100px auto;
+  border-bottom: 5px solid wheat;
+}
+
+.vertical_line1{
+  width: 0%;
+  height: 350px;
+  position: absolute; /* Takes it out of the layout flow */
+  top: 50%;
+  left: 38%;
+  border-left: 5px solid wheat;
+  transform: translate(-50%, -50%); /* shifts line up towards the center (to change just update top/left values*/
+}
+
+.vertical_line2{
+  width: 0%;
+  height: 350px;
+  position: absolute; /* Takes it out of the layout flow */
+  top: 50%;
+  left: 58%;
+  border-left: 5px solid wheat;
+  transform: translate(-50%, -50%); 
+}
+
+.button1{ /*complete*/
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ top: 230px;              
+ left: 25%;               
+ color: transparent;
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 51px 91px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+.button2{ /*COMPLETE*/
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ top: 230px;              
+ left: 38%;               
+ color: transparent;
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 58px 147px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+.button3{ /*COMPLETE*/
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ top: 230px;              
+ left: 58%;               
+ color: transparent;
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 58px 125px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+.button4{ /*complete*/
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ top: 351px;              
+ left: 25%;               
+ color: transparent;
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 50px 95px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+.button5{ /*COMPLETE*/
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ top: 353px;              
+ left: 38%;               
+ color: transparent;
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 49px 147px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+.button6{ /*COMPLETE*/
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ top: 353px;              
+ left: 58%;               
+ color: transparent;
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 49px 125px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+.button7{ /*complete*/
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ top: 458px;              
+ left: 25%;               
+ color: transparent;
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 55px 94px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+.button8{ /*COMPLETE*/
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ top: 458px;              
+ left: 38%;               
+ color: transparent;
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 56px 147px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+.button9{ /*COMPLETE*/
+ position: absolute;      /* CRITICAL: Makes top and left coordinates work */
+ size: 100;
+ top: 458px;              
+ left: 58%;               
+ color: transparent;
+ background: transparent;  /* Makes the background see-through */
+ border: none;             /* Removes the outline border line */
+ outline: none;
+ padding: 56px 125px;
+ cursor: pointer;   
+ font-weight: bold;
+}
+
+button:disabled {
+  cursor: default;       /* Keeps the cursor as the standard arrow instead of a pointer hand */
+  pointer-events: none;  /* THE SILVER BULLET: Completely disables all hover states, cursor changes, and clicks */
+}
+
+.shape-circle1{
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 28%;
+  border: 5px solid tomato; /* Thicker colored ring */
+  border-radius: 50%;       /* Turns a square box into a perfect circle */
+  background-color: transparent;
+}
+
+.shape-circle2{
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 40%;
+  border: 5px solid tomato; /* Thicker colored ring */
+  border-radius: 50%;       /* Turns a square box into a perfect circle */
+  background-color: transparent;
+}
+
+.shape-circle3{
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 40%;
+  border: 5px solid tomato; /* Thicker colored ring */
+  border-radius: 50%;       /* Turns a square box into a perfect circle */
+  background-color: transparent;
+}
+
+.shape-circle4{
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 15px;
+  left: 28%;
+  border: 5px solid tomato; /* Thicker colored ring */
+  border-radius: 50%;       /* Turns a square box into a perfect circle */
+  background-color: transparent;
+}
+
+.shape-circle5{
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 15px;
+  left: 40%;
+  border: 5px solid tomato; /* Thicker colored ring */
+  border-radius: 50%;       /* Turns a square box into a perfect circle */
+  background-color: transparent;
+}
+
+.shape-circle6{
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 15px;
+  left: 40%;
+  border: 5px solid tomato; /* Thicker colored ring */
+  border-radius: 50%;       /* Turns a square box into a perfect circle */
+  background-color: transparent;
+}
+
+.shape-circle7{
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 15px;
+  left: 28%;
+  border: 5px solid tomato; /* Thicker colored ring */
+  border-radius: 50%;       /* Turns a square box into a perfect circle */
+  background-color: transparent;
+}
+
+.shape-circle8{
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 15px;
+  left: 40%;
+  border: 5px solid tomato; /* Thicker colored ring */
+  border-radius: 50%;       /* Turns a square box into a perfect circle */
+  background-color: transparent;
+}
+
+.shape-circle9{
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 15px;
+  left: 40%;
+  border: 5px solid tomato; /* Thicker colored ring */
+  border-radius: 50%;       /* Turns a square box into a perfect circle */
+  background-color: transparent;
+}
+
+
+
+.shape-x1 {
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 28%;
+  background-color: transparent;
+}
+
+/* THE TWO LINES (This styles both lines at the same time) */
+.shape-x1::before,
+.shape-x1::after {
+  content: "";             /* Required for pseudo-elements to show up */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;             /* Matches the 5px thickness of your circle */
+  background-color: tomato; /* Matches your circle color */
+  margin-top: -2.5px;      /* Centers the lines perfectly vertically */
+  border-radius: 3px;      /* Optional: slightly rounds the sharp edges of the X */
+}
+
+/* ROTATE LINE 1 */
+.shape-x1::before {
+  transform: rotate(45deg);
+}
+
+/* ROTATE LINE 2 */
+.shape-x1::after {
+  transform: rotate(-45deg);
+}
+
+/* DONE*/
+
+.shape-x2 {
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 40%;
+  background-color: transparent;
+}
+
+/* THE TWO LINES (This styles both lines at the same time) */
+.shape-x2::before,
+.shape-x2::after {
+  content: "";             /* Required for pseudo-elements to show up */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;             /* Matches the 5px thickness of your circle */
+  background-color: tomato; /* Matches your circle color */
+  margin-top: -2.5px;      /* Centers the lines perfectly vertically */
+  border-radius: 3px;      /* Optional: slightly rounds the sharp edges of the X */
+}
+
+/* ROTATE LINE 1 */
+.shape-x2::before {
+  transform: rotate(45deg);
+}
+
+/* ROTATE LINE 2 */
+.shape-x2::after {
+  transform: rotate(-45deg);
+}
+
+/* DONE*/
+
+.shape-x3 {
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 40%;
+  background-color: transparent;
+}
+
+/* THE TWO LINES (This styles both lines at the same time) */
+.shape-x3::before,
+.shape-x3::after {
+  content: "";             /* Required for pseudo-elements to show up */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;             /* Matches the 5px thickness of your circle */
+  background-color: tomato; /* Matches your circle color */
+  margin-top: -2.5px;      /* Centers the lines perfectly vertically */
+  border-radius: 3px;      /* Optional: slightly rounds the sharp edges of the X */
+}
+
+/* ROTATE LINE 1 */
+.shape-x3::before {
+  transform: rotate(45deg);
+}
+
+/* ROTATE LINE 2 */
+.shape-x3::after {
+  transform: rotate(-45deg);
+}
+
+/* DONE*/
+
+.shape-x4 {
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 28%;
+  background-color: transparent;
+}
+
+/* THE TWO LINES (This styles both lines at the same time) */
+.shape-x4::before,
+.shape-x4::after {
+  content: "";             /* Required for pseudo-elements to show up */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;             /* Matches the 5px thickness of your circle */
+  background-color: tomato; /* Matches your circle color */
+  margin-top: -2.5px;      /* Centers the lines perfectly vertically */
+  border-radius: 3px;      /* Optional: slightly rounds the sharp edges of the X */
+}
+
+/* ROTATE LINE 1 */
+.shape-x4::before {
+  transform: rotate(45deg);
+}
+
+/* ROTATE LINE 2 */
+.shape-x4::after {
+  transform: rotate(-45deg);
+}
+
+/* DONE*/
+
+.shape-x5 {
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 40%;
+  background-color: transparent;
+}
+
+/* THE TWO LINES (This styles both lines at the same time) */
+.shape-x5::before,
+.shape-x5::after {
+  content: "";             /* Required for pseudo-elements to show up */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;             /* Matches the 5px thickness of your circle */
+  background-color: tomato; /* Matches your circle color */
+  margin-top: -2.5px;      /* Centers the lines perfectly vertically */
+  border-radius: 3px;      /* Optional: slightly rounds the sharp edges of the X */
+}
+
+/* ROTATE LINE 1 */
+.shape-x5::before {
+  transform: rotate(45deg);
+}
+
+/* ROTATE LINE 2 */
+.shape-x5::after {
+  transform: rotate(-45deg);
+}
+
+/* DONE*/
+
+.shape-x6 {
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 40%;
+  background-color: transparent;
+}
+
+/* THE TWO LINES (This styles both lines at the same time) */
+.shape-x6::before,
+.shape-x6::after {
+  content: "";             /* Required for pseudo-elements to show up */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;             /* Matches the 5px thickness of your circle */
+  background-color: tomato; /* Matches your circle color */
+  margin-top: -2.5px;      /* Centers the lines perfectly vertically */
+  border-radius: 3px;      /* Optional: slightly rounds the sharp edges of the X */
+}
+
+/* ROTATE LINE 1 */
+.shape-x6::before {
+  transform: rotate(45deg);
+}
+
+/* ROTATE LINE 2 */
+.shape-x6::after {
+  transform: rotate(-45deg);
+}
+
+/* DONE*/
+
+.shape-x7 {
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 28%;
+  background-color: transparent;
+}
+
+/* THE TWO LINES (This styles both lines at the same time) */
+.shape-x7::before,
+.shape-x7::after {
+  content: "";             /* Required for pseudo-elements to show up */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;             /* Matches the 5px thickness of your circle */
+  background-color: tomato; /* Matches your circle color */
+  margin-top: -2.5px;      /* Centers the lines perfectly vertically */
+  border-radius: 3px;      /* Optional: slightly rounds the sharp edges of the X */
+}
+
+/* ROTATE LINE 1 */
+.shape-x7::before {
+  transform: rotate(45deg);
+}
+
+/* ROTATE LINE 2 */
+.shape-x7::after {
+  transform: rotate(-45deg);
+}
+
+/* DONE */
+
+.shape-x8 {
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 40%;
+  background-color: transparent;
+}
+
+/* THE TWO LINES (This styles both lines at the same time) */
+.shape-x8::before,
+.shape-x8::after {
+  content: "";             /* Required for pseudo-elements to show up */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;             /* Matches the 5px thickness of your circle */
+  background-color: tomato; /* Matches your circle color */
+  margin-top: -2.5px;      /* Centers the lines perfectly vertically */
+  border-radius: 3px;      /* Optional: slightly rounds the sharp edges of the X */
+}
+
+/* ROTATE LINE 1 */
+.shape-x8::before {
+  transform: rotate(45deg);
+}
+
+/* ROTATE LINE 2 */
+.shape-x8::after {
+  transform: rotate(-45deg);
+}
+
+/* DONE */
+
+.shape-x9 {
+  position: absolute;   
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 40%;
+  background-color: transparent;
+}
+
+/* THE TWO LINES (This styles both lines at the same time) */
+.shape-x9::before,
+.shape-x9::after {
+  content: "";             /* Required for pseudo-elements to show up */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;             /* Matches the 5px thickness of your circle */
+  background-color: tomato; /* Matches your circle color */
+  margin-top: -2.5px;      /* Centers the lines perfectly vertically */
+  border-radius: 3px;      /* Optional: slightly rounds the sharp edges of the X */
+}
+
+/* ROTATE LINE 1 */
+.shape-x9::before {
+  transform: rotate(45deg);
+}
+
+/* ROTATE LINE 2 */
+.shape-x9::after {
+  transform: rotate(-45deg);
+}
+
+
+
+/* HORIZONTAL 1 */
+.line1 {
+  position: absolute; 
+  width: 50%;              
+  height: 5px;              
+  background-color: black;  
+  left: 25%;                
+  top: 285px;               
+}
+
+/* HORIZONTAL 2 */
+.line2 {
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  background-color: black;
+  left: 25%;
+  top: 410px;            
+}
+
+/* HORIZONTAL 3 */
+.line3 {
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  background-color: black;
+  left: 25%;
+  top: 515px;              
+}
+
+/* VERTICAL 1 */
+.line4 {
+  position: absolute;
+  width: 5px;             
+  height: 300px;           
+  background-color: black;
+  top: 260px;              
+  left: 30.75%;            
+}
+
+/* VERTICAL 2 */
+.line5 {
+  position: absolute;
+  width: 5px;
+  height: 300px;
+  background-color: black;
+  top: 260px;
+  left: 48%;             
+}
+
+/* VERTICAL 3 */
+.line6 {
+  position: absolute;
+  width: 5px;
+  height: 300px;
+  background-color: black;
+  top: 260px;
+  left: 67%;                
+}
+
+
+/* TOP-LEFT TO BOTTOM-RIGHT (\) */
+.line7 {
+  position: absolute;
+  width: 680px;               
+  height: 5px;
+  background-color: black;
+  top: 410px;                 
+  left: 50%;                  
+  
+  transform: translate(-50%, -50%) rotate(22deg); 
+}
+
+/* TOP-RIGHT TO BOTTOM-LEFT (/) */
+.line8 {
+  position: absolute;
+  width: 680px;               
+  height: 5px;
+  background-color: black;
+  top: 410px;                 
+  left: 50%;                  
+  
+  transform: translate(-50%, -50%) rotate(-22deg); 
+}
